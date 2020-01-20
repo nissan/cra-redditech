@@ -94,6 +94,32 @@ const Addons = () => {
             </Fragment>
           }
         />
+        <Divider dashed={true} />
+        <Alert
+          banner={true}
+          type="success"
+          message={
+            <Fragment>
+              <Paragraph>
+                <Text>
+                  <code>storybook</code> is enabled
+                </Text>
+              </Paragraph>
+              <Paragraph>
+                <Text>
+                  More documentation to{' '}
+                  <a href="https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/">
+                    Learn Storybook
+                  </a>{' '}
+                  as well as a good starter article on {' '}
+                  <a href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e">
+                    Component-Driven Development
+                  </a>
+                </Text>
+              </Paragraph>
+            </Fragment>
+          }
+        />
       </Paragraph>
     </Fragment>
   );
