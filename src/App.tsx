@@ -1,5 +1,6 @@
 import React from 'react';
-import { Typography, Divider, Button, Alert } from 'antd';
+import { Typography, Divider, Alert } from 'antd';
+import Button from './components/atoms/Button';
 import Addons from './components/Addons';
 import logo from './logo.svg';
 import './App.css';
@@ -16,7 +17,6 @@ const App: React.FC = () => {
         <Paragraph>
           Edit <code>src/App.tsx</code> and save to reload.
         </Paragraph>
-        <Divider dashed={true} />
         <Router>
           <Switch>
             <Route path={['/', '/showAddOns']} exact={true}>

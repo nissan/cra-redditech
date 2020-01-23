@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import path from 'path';
 import moment from 'moment';
 import { Alert, Typography, Divider, Icon } from 'antd';
+import Button from './atoms/Button';
 
 const Addons = () => {
   const { Paragraph, Text } = Typography;
@@ -111,11 +112,39 @@ const Addons = () => {
                   <a href="https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/">
                     Learn Storybook
                   </a>{' '}
-                  as well as a good starter article on {' '}
+                  as well as a good starter article on{' '}
                   <a href="https://blog.hichroma.com/component-driven-development-ce1109d56c8e">
                     Component-Driven Development
                   </a>
                 </Text>
+              </Paragraph>
+            </Fragment>
+          }
+        />
+        <Divider dashed={true} />
+        <Alert
+          banner={true}
+          type="success"
+          message={
+            <Fragment>
+              <Paragraph>
+                <Text code={true}>styled-components</Text> is enabled. Here is a{' '}
+                <Button>styled button</Button>.
+              </Paragraph>
+              <Paragraph>
+                <Text>
+                  More documentation on this is{' '}
+                  <a href="https://styled-components.com/docs">here </a>
+                </Text>
+              </Paragraph>
+              <Paragraph>
+                Following the principles of{' '}
+                <a href="https://bradfrost.com/blog/post/atomic-web-design/">
+                  Atomic Design
+                </a>
+                , the <Text code={true}>{'<Button>'}</Text> has been placed in
+                an <Text code={true}>atoms</Text> folder within the{' '}
+                <Text code={true}>components</Text> folder
               </Paragraph>
             </Fragment>
           }
