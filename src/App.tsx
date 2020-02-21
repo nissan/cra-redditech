@@ -1,62 +1,10 @@
 import React from 'react';
-import { Typography, Divider, Alert } from 'antd';
-import Button from './components/atoms/Button';
-import Addons from './components/Addons';
-import logo from './logo.svg';
+import DefaultPage from './components/pages/DefaultPage';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-const App: React.FC = () => {
-  const { Title, Paragraph, Text } = Typography;
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Title>
-          <img src={logo} className="App-logo" alt="logo" />
-        </Title>
-        <Paragraph>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </Paragraph>
-        <Router>
-          <Switch>
-            <Route path={['/', '/showAddOns']} exact={true}>
-              <Addons />
-              <Button>
-                <Link to="/hideAddOns">Hide AddOns</Link>
-              </Button>
-            </Route>
-            <Route path="/hideAddOns">
-              <Paragraph>
-                <Alert
-                  banner={true}
-                  type="info"
-                  message={
-                    <React.Fragment>
-                      <Paragraph>
-                        <Text>AddOns Hidden</Text>
-                      </Paragraph>
-                    </React.Fragment>
-                  }
-                />
-              </Paragraph>
-              <Button>
-                <Link to="/showAddOns">Show AddOns</Link>
-              </Button>
-            </Route>
-          </Switch>
-        </Router>
-        <Divider dashed={true} />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = (props: unknown) => {
+  return <DefaultPage />;
 };
 
 export default App;
