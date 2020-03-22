@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Divider, Alert } from 'antd';
-import Button from './components/atoms/Button';
+import Button from './components/ui-antd/atoms/Button';
 import Addons from './components/Addons';
 import logo from './logo.svg';
 import './App.css';

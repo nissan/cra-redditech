@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import path from 'path';
 import moment from 'moment';
-import { Alert, Typography, Divider, Icon } from 'antd';
-import Button from './atoms/Button';
+import { Alert, Typography, Divider} from 'antd';
+import ExclamationCircleOutlined from 'antd/lib/icon';
+import Button from './ui-antd/atoms/Button';
 
 const Addons = () => {
   const { Paragraph, Text } = Typography;
@@ -59,7 +60,7 @@ const Addons = () => {
           message={
             <Fragment>
               <Paragraph>
-                <Icon type="exclamation-circle" />
+                <ExclamationCircleOutlined />
                 <Text>
                   <code>antd</code> is enabled
                 </Text>
@@ -143,7 +144,7 @@ const Addons = () => {
                   Atomic Design
                 </a>
                 , the <Text code={true}>{'<Button>'}</Text> has been placed in
-                an <Text code={true}>atoms</Text> folder within the{' '}
+                an <Text code={true}>ui-antd\atoms</Text> folder within the{' '}
                 <Text code={true}>components</Text> folder
               </Paragraph>
             </Fragment>
